@@ -6,7 +6,6 @@ pipeline {
             agent {
                 docker {
                     image 'node:18-alpine'
-                    args '-v /usr/local/bin:/usr/local/bin' // Optional: If you need volume or other args
                 }
             }
 
@@ -23,4 +22,3 @@ pipeline {
         }
     }
 }
-#ff
